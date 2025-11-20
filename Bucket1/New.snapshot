@@ -21,39 +21,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "269fd646-8e87-39eb-b825-f7f293bf3710",
-            "id" : "4d008f5c-7afd-39e3-a70b-53972b0d176a",
-            "instanceIdentifier" : "9fd000ea-019a-1000-1ab1-306286614256",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "269fd646-8e87-39eb-b825-f7f293bf3710",
-          "identifier" : "28001892-2172-3eff-98e3-b5695cb422e2",
-          "instanceIdentifier" : "9fd013d1-019a-1000-389d-99f1a605d41e",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "No Retry", "Failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "269fd646-8e87-39eb-b825-f7f293bf3710",
-            "id" : "b80d072f-7798-320e-a271-37c6a6938903",
-            "instanceIdentifier" : "7a714c6f-019a-1000-63bb-7603684684de",
-            "name" : "InvokeHTTP",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "269fd646-8e87-39eb-b825-f7f293bf3710",
             "id" : "be7cfb52-59d9-31d1-ab46-22e9fec52e95",
             "instanceIdentifier" : "a0060a60-019a-1000-8247-eee5f97c42b4",
             "name" : "Funnel",
@@ -169,15 +136,6 @@
           "position" : {
             "x" : 8.0,
             "y" : 584.0
-          }
-        }, {
-          "componentType" : "FUNNEL",
-          "groupIdentifier" : "269fd646-8e87-39eb-b825-f7f293bf3710",
-          "identifier" : "4d008f5c-7afd-39e3-a70b-53972b0d176a",
-          "instanceIdentifier" : "9fd000ea-019a-1000-1ab1-306286614256",
-          "position" : {
-            "x" : 1144.0,
-            "y" : 416.0
           }
         } ],
         "identifier" : "269fd646-8e87-39eb-b825-f7f293bf3710",
