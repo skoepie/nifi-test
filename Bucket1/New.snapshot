@@ -54,6 +54,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "269fd646-8e87-39eb-b825-f7f293bf3710",
+            "id" : "be7cfb52-59d9-31d1-ab46-22e9fec52e95",
+            "instanceIdentifier" : "a0060a60-019a-1000-8247-eee5f97c42b4",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "269fd646-8e87-39eb-b825-f7f293bf3710",
+          "identifier" : "52f8231a-20e4-3945-a077-9baea7a4871a",
+          "instanceIdentifier" : "a0062841-019a-1000-45bf-4e8982552e35",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Retry" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "269fd646-8e87-39eb-b825-f7f293bf3710",
+            "id" : "b80d072f-7798-320e-a271-37c6a6938903",
+            "instanceIdentifier" : "7a714c6f-019a-1000-63bb-7603684684de",
+            "name" : "InvokeHTTP",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "269fd646-8e87-39eb-b825-f7f293bf3710",
             "id" : "fb32ac37-6f78-3956-9af9-d29ad7aa39d5",
             "instanceIdentifier" : "9fcfc16f-019a-1000-4e0a-d7c7bdf66351",
             "name" : "Funnel",
@@ -120,6 +153,15 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "269fd646-8e87-39eb-b825-f7f293bf3710",
+          "identifier" : "be7cfb52-59d9-31d1-ab46-22e9fec52e95",
+          "instanceIdentifier" : "a0060a60-019a-1000-8247-eee5f97c42b4",
+          "position" : {
+            "x" : 804.9999931197752,
+            "y" : 637.9999715554942
+          }
+        }, {
           "componentType" : "FUNNEL",
           "groupIdentifier" : "269fd646-8e87-39eb-b825-f7f293bf3710",
           "identifier" : "fb32ac37-6f78-3956-9af9-d29ad7aa39d5",
@@ -249,7 +291,7 @@
           "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "Retry", "Original" ],
+          "autoTerminatedRelationships" : [ "Original" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
